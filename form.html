@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tourism website">
+    <meta name="keywords" content="home,products,our services">
+    <title>Tats Tourism Company | Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="video-bg">
+    <video class="video-section" autoplay loop playsinline muted preload="auto">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</div>
+
+    <nav class="navbar">
+        <div class="nav-wrap">
+
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo">
+                    <h2>TATS</h2>
+                    <span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="form.html">Registration</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <span></span>
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <div class="page-layout no-bars">
+        <main class="main-content">
+            <h1>Water Systems</h1>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="images/falls.jpg" alt="falls">
+                    <div class="service-card-body">
+                        <h3>Bujagali Falls</h3>
+                        <p>Where nature meets the real meaning of beauty. Suitable for photography &amp; filming</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/watersport.jpg" alt="sport">
+                    <div class="service-card-body">
+                        <h3>Water Sport</h3>
+                        <p>Come experience gaming activities that boost personal fitness.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/resort6.jpg" alt="beach">
+                    <div class="service-card-body">
+                        <h3>Kaazi Beach</h3>
+                        <p>Feel the beautiful view of the lake side with us.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tats Tourism Company</h4>
+                <p>Transport | Accomodation | Tour Bookings
+                    <br>Tour Guides | Tour Kits
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Reach us</h4>
+                <p>
+                    Location: Kampala-Jinja Road<br>Plot 345, Nasser Street
+                    <br>Contact: +256-708-604-4303 <br>Gmail: tatstours@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tats Tourism Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+    </script>
+     <script src="script.js"></script>
+</body>
+
+</html>
