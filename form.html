@@ -1,30 +1,29 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="tourism website">
+    <meta name="" content="tourism website">
     <meta name="keywords" content="home,products,our services">
-    <title>Tats Tourism Company | Tourism</title>
+    <title>Tats Touirism Company| Tourism</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
+
+<br>
 
 <body>
 
-<div class="video-bg">
-    <video class="video-section" autoplay loop playsinline muted preload="auto">
-        <source src="video.mp4" type="video/mp4">
-    </video>
-</div>
-
     <nav class="navbar">
         <div class="nav-wrap">
-
             <div class="nav-left">
                 <a href="index.html" class="nav-logo">
-                    <h2>TATS</h2>
+                  <h2>TATS</h2>
                     <span></span>
                 </a>
                 <ul class="nav-menu">
@@ -40,65 +39,116 @@
             <button class="menu-btn">☰</button>
         </div>
     </nav>
+     
 
-    <div class="page-layout no-bars">
-        <main class="main-content">
-            <h1>Water Systems</h1>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="images/falls.jpg" alt="falls">
-                    <div class="service-card-body">
-                        <h3>Bujagali Falls</h3>
-                        <p>Where nature meets the real meaning of beauty. Suitable for photography &amp; filming</p>
-                    </div>
-                </div>
+      <section class="login-section">
 
-                <div class="service-card">
-                    <img src="images/watersport.jpg" alt="sport">
-                    <div class="service-card-body">
-                        <h3>Water Sport</h3>
-                        <p>Come experience gaming activities that boost personal fitness.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <img src="images/resort6.jpg" alt="beach">
-                    <div class="service-card-body">
-                        <h3>Kaazi Beach</h3>
-                        <p>Feel the beautiful view of the lake side with us.</p>
-                    </div>
-                </div>
+        <div class="login-container"> 
+            <div class="login-header">
+                <h2>Welcome</h2>
+                <h1> Tats Tourism Company</h1>
             </div>
-        </main>
-    </div>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Tats Tourism Company</h4>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="name">Name:
+                    <input type="text" id="name" placeholder="Enter name" required="required"></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:
+                    <input type="email" id="email" placeholder="name@gmail.com" required="required"></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Phone:
+                    <input type="tel" id="contact" placeholder="+256-708-445-303" required></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="account-type"> <i class="fa-solid fa-table-list"></i>Group:
+                    <select id="account-type" required="required">
+            <option value="">Select</option>
+            <option value="kenya">Kenya</option>
+            <option value="s.africa">South Africa</option>
+            <option value="w.africa">West Africa</option>
+            <option value="other">Non African</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-regular fa-user"></i>Gender:
+                    <div class="radio-group">
+                        <label class="radio-option">
+              <input type="radio" name="gender" value="male" required="required"> Male</label>
+
+                    </label>
+                    <label class="radio-option">
+              <input type="radio" name="gender" value="female" required>
+              Female
+            </label>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Token:
+            <input type="password" id="password" placeholder="Enter your password" required="required"></label>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:
+            <textarea id="message" placeholder="Type your message here" rows="2"></textarea required="required"></label>
+        </div>
+
+        <div class="form-options">
+            <label>
+            <input type="checkbox"> Remember me
+          </label>
+            <a href="https://mail.google.com/">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Sign In</button>
+
+
+        <p class="signup-link">
+            New to  <a href="#">Create account</a>
+        </p>
+        </form>
+        </div>
+
+  </section>
+         <footer class="site-footer ">
+        <div class="footer-content ">
+            <div class="footer-section ">
+                <h4>
+                    Tats Tourism Company
+                </h4>
                 <p>Transport | Accomodation | Tour Bookings
-                    <br>Tour Guides | Tour Kits
+                <br>Tour Guides | Tour Kits
                 </p>
             </div>
-            <div class="footer-section">
+            <div class="footer-section ">
                 <h4>Reach us</h4>
                 <p>
-                    Location: Kampala-Jinja Road<br>Plot 345, Nasser Street
-                    <br>Contact: +256-708-604-4303 <br>Gmail: tatstours@gmail.com
-                </p>
+                    Location:Kampala-Jinja Road<br>Plot 345, Nasser Street
+                    <br>Contact: +256-708-604-4303 <br>Gmail: tatstours@gmail.com </p>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class=" footer-bottom ">
             <p>&copy; 2026 Tats Tourism Company. All rights reserved.</p>
         </div>
     </footer>
-
     <script>
         document.querySelector('.menu-btn').addEventListener('click', () => {
             document.querySelector('.nav-menu').classList.toggle('show');
         });
     </script>
-     <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
+    
+
+  
+
+
+
